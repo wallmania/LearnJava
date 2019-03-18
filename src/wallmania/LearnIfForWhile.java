@@ -41,19 +41,16 @@ public class LearnIfForWhile {
 				break;
 		}
 		
-		inputNum.close();
-		
 		System.out.println("\n\n");
 		
 		System.out.print("INPUT NUMBER : ");
-		Scanner inputNum2 = new Scanner(System.in);
-		score = inputNum2.nextInt();
+		score = inputNum.nextInt();
 		
 		for (int i=1; i<10; i++) {
 			System.out.printf("%d * %d = %d\n", score, i, (score * i));
 		}
 		
-		inputNum2.close();
+		inputNum.close();
 	}
 
 }
