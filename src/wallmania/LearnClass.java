@@ -11,9 +11,7 @@ public class LearnClass {
 	
 	// 생성자. (클래스 이름과 동일한 이름을 가진 method)
 	// 반환하는 내용이 없다. (원하는 color, gear, price 새로 설정해서 새로운 LearnClass 생성 가
-	public LearnClass() {
-		System.out.print("\nI am learning Java Class\n");
-	}
+	public LearnClass() { System.out.print("\nI am learning Java Class\n"); }
 	
 	// method (기능)
 	public void run() { System.out.println("--run--"); System.out.print("\n"); }
