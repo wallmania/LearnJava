@@ -54,7 +54,13 @@ public class LearnClass_Main {
 			System.out.println("ExClass_5th != ExClass_7th");
 		}
 		
-		//
+		// reference에 null 저장되면 객체의 연결이 끊기며, 더 이상 객체를 이용할 수 없다. 
+		System.out.println("");
+		System.out.println("ExClass_5th --> " + ExClass_5th);
+		ExClass_5th.getInfo();
+		ExClass_5th = null;
+		System.out.println("ExClass_5th --> " + ExClass_5th);
+		// ExClass_5th.getInfo();
 		
 		
 		
