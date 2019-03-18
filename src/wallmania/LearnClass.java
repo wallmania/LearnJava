@@ -13,21 +13,18 @@ public class LearnClass {
 	// 반환하는 내용이 없다. (원하는 color, gear, price 새로 설정해서 새로운 LearnClass 생성 가
 	public LearnClass() {
 		System.out.println("I am learning Java Class");
+		System.out.print("\n");
 	}
 	
 	// method (기능)
-	public void run() {
-		System.out.println("--run--");
-	}
+	public void run() { System.out.println("--run--"); System.out.print("\n"); }
 	
 	// method (기능)
-	public void stop() {
-		System.out.println("--stop--");
-	}
+	public void stop() { System.out.println("--stop--"); System.out.print("\n"); }
 	
 	// method (기능)
 	public void info() {
-		System.out.println("-- info() --");
+		System.out.println("-- info --");
 		System.out.println("color : " + color);
 		System.out.println("gear : " + gear);
 		System.out.println("price : " + price);
