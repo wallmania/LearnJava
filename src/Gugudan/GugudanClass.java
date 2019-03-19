@@ -25,5 +25,8 @@ public class GugudanClass {
 			int[] result = GugudanMethod.calculate(number1, number2);
 			GugudanMethod.print(result);
 		}
+		
+		scanner1.close();
+		scanner2.close();
 	}
 }
