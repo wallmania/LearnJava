@@ -3,14 +3,11 @@ package wallmania;
 public class LearnClass_Main {
 	public static void main (String[] args) {
 		
-		// LearnClass Type의 객체 생성 (해당 객체 이름은 ExClass_1st)
-		LearnClass ExClass_1st = new LearnClass();
+		// LearnClass Type의 객체 생성 (해당 객체 이름은 ExClass_1st, ExClass_2nd)
+		LearnClass ExClass_1st = new LearnClass(); LearnClass ExClass_2nd = new LearnClass();
 		ExClass_1st.color = "red"; ExClass_1st.gear = "auto"; ExClass_1st.price = 100;
-		ExClass_1st.run(); ExClass_1st.stop(); ExClass_1st.info();
-		
-		// LearnClass Type의 객체 생성 (해당 객체 이름은 ExClass_2nd)
-		LearnClass ExClass_2nd = new LearnClass();
 		ExClass_2nd.color = "yellow"; ExClass_2nd.gear = "auto"; ExClass_2nd.price = 500;
+		ExClass_1st.run(); ExClass_1st.stop(); ExClass_1st.info();
 		ExClass_2nd.run(); ExClass_2nd.stop(); ExClass_2nd.info();
 		
 		// 생성자에 정보 입력하는 방법 2가지.
