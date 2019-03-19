@@ -60,5 +60,4 @@ public class LearnClass_Main {
 		LearnClass4 learnclass4 = new LearnClass4(10, 20);
 		learnclass4.getInfo();
 	}
-
 }
