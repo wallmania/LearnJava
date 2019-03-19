@@ -55,5 +55,4 @@ public class LearnIfForWhile {
 		
 		inputNum.close();
 	}
-
 }

@@ -36,8 +36,5 @@ public class LearnArrayMemory {
 		for (int i=0; i<3; i++) {
 			System.out.println("arrMul[" + String.valueOf(i) + "] : " + Arrays.toString(arrMul[i]));
 		}
-		
-		
 	}
-
 }

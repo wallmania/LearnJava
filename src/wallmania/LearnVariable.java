@@ -8,5 +8,4 @@ public class LearnVariable {
 		i = 300; System.out.println("i = " + i);
 		i = 0; System.out.println("i = " + i);
 	}
-
 }

@@ -8,5 +8,4 @@ public class LearnDataType {
 		boolean b = false; System.out.println("b = " + b);
 		String s = "Hello Java World!"; System.out.println("s = " + s);
 	}
-
 }
