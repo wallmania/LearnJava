@@ -14,7 +14,7 @@ public class LearnDataStream {
 		//---------------try---------------//
 		try {
 			// outputStream을 dataOutputStream으로 Upgrade
-			outputStream = new FileOutputStream("/Users/junlee/Java/workspace/helloForDataStream.txt");
+			outputStream = new FileOutputStream("/Users/junlee/Java/workspace/JavaFileForDS.txt");
 			dataOutputStream = new DataOutputStream(outputStream);
 			dataOutputStream.writeUTF(str);
 		//---------------catch---------------//	

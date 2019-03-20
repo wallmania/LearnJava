@@ -7,13 +7,14 @@ public class LearnFileCopy {
 	
 	public static void main(String[] args) {
 		
+		// 어딘가로 입력을 받아서 어딘가로 출력을 한다. (copy 하기 --> FileInputStream + FileOutputStream)
 		FileInputStream inputStream = null;
 		FileOutputStream outputStream = null;
 		
 		//---------------try---------------//
 		try {
-			inputStream = new FileInputStream("/Users/junlee/Java/workspace/helloForRead.txt");
-			outputStream = new FileOutputStream("/Users/junlee/Java/workspace/helloForCopy.txt");
+			inputStream = new FileInputStream("/Users/junlee/Java/workspace/JavaFileForRead.txt");
+			outputStream = new FileOutputStream("/Users/junlee/Java/workspace/JavaFileForCopy.txt");
 			
 			byte[] arr = new byte[3];
 			

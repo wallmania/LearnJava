@@ -15,13 +15,13 @@ public class LearnInputOutput4 {
 		// ASCII Code to Char -> System.out.println((char)65) = A
 		FileOutputStream outputStream = null;
 		try {
-			outputStream = new FileOutputStream("/Users/junlee/Java/workspace/helloForWrite2.txt");
-			String data = "Hello wallmania, I am Java.";
+			outputStream = new FileOutputStream("/Users/junlee/Java/workspace/JavaFileForWrite2.txt");
+			String data = "Hello wallmania, I am Java. (from LearnInputOutput4.java)";
 			byte[] arr = data.getBytes();
 			
 			try {
-				// 0번째부터 5개 저장 (H, e, l, l, o)
-				outputStream.write(arr, 0, 5);
+				// 0번째부터 5개 저장 (H, e, l, l, o) --> outputStream.write(arr, 0, 5);
+				outputStream.write(arr, 0, data.length());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

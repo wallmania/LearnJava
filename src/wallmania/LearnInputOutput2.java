@@ -16,7 +16,7 @@ public class LearnInputOutput2 {
 		// ASCII Code to Char -> System.out.println((char)65) = A
 		FileInputStream inputStream = null;
 		try {
-			inputStream = new FileInputStream("/Users/junlee/Java/workspace/helloForRead.txt");
+			inputStream = new FileInputStream("/Users/junlee/Java/workspace/JavaFileForRead.txt");
 			int data = 0;
 			byte[] bs = new byte[3];
 			while(true) {

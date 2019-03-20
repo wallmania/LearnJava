@@ -15,8 +15,8 @@ public class LearnInputOutput3 {
 		// ASCII Code to Char -> System.out.println((char)65) = A
 		FileOutputStream outputStream = null;
 		try {
-			outputStream = new FileOutputStream("/Users/junlee/Java/workspace/helloForWrite1.txt");
-			String data = "Hello wallmania, I am Java.";
+			outputStream = new FileOutputStream("/Users/junlee/Java/workspace/JavaFileForWrite1.txt");
+			String data = "Hello wallmania, I am Java. (from LearnInputOutput3.java)";
 			byte[] arr = data.getBytes();
 			
 			try {
