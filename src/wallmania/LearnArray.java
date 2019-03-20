@@ -36,6 +36,7 @@ public class LearnArray {
 		}
 		double ave = (double)(score[0]+score[1]+score[2]+score[3]+score[4])/5;
 		System.out.printf("-----------------------\n평 점: \t\t%.2f", ave);
+		System.out.println("");
 		scanner.close();
 	}
 }
