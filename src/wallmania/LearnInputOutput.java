@@ -11,7 +11,7 @@ public class LearnInputOutput {
 	public static void main(String[] args) {
 		
 		// File Read -> 예외처리가 반드시 필요 (안하면 compile error 발생.)
-		// read()
+		// data = inputStream.read();
 		FileInputStream inputStream = null;
 		try {
 			inputStream = new FileInputStream("/Users/junlee/Java/workspace/hello.txt");
