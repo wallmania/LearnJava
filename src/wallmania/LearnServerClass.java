@@ -17,11 +17,10 @@ public class LearnServerClass {
 		
 		try {
 			serverSocket = new ServerSocket(9000);
-			System.out.println("클라이언트 맞을 준비 완료!");
+			System.out.println("[1] 클라이언트 맞을 준비 완료!");
 			
 			socket = serverSocket.accept();
-			System.out.println("클라이언트 연결!");
-			System.out.println("socket : " + socket);
+			System.out.println("[2] 클라이언트 연결 성공! w/ socket info (" + socket + ")");
 			
 			inputStream = socket.getInputStream(); outputStream = socket.getOutputStream();
 			dataInputStream = new DataInputStream(inputStream); dataOutputStream = new DataOutputStream(outputStream);

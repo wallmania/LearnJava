@@ -28,6 +28,7 @@ public class LearnClientClass {
 			
 			while (true) {
 				System.out.println("메시지 입력.");
+				System.out.print(">> ");
 				String outMessage = scanner.nextLine();
 				dataOutputStream.writeUTF(outMessage);
 				dataOutputStream.flush();
