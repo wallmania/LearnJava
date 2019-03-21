@@ -40,15 +40,15 @@ public class LearnIfForWhile {
 		score = inputNum.nextInt();
 		
 		// 반복문 : for, while, do while
-		System.out.print("\n" + "[1] 반복문 : for" + "\n");
+		System.out.print("\n" + "[1] 반복문 : for" + "\n" + ">> ");
 		for (int i=1; i<10; i++) { 
 			System.out.printf("%d * %d = %d\t", score, i, (score * i)); 
 		}
-		System.out.print("\n" + "[2] 반복문 using while" + "\n");
+		System.out.print("\n" + "[2] 반복문 using while" + "\n" + ">> ");
 		int j=1; while (j<10) { 
 			System.out.printf("%d * %d = %d\t", score, j, (score*j)); j += 1; 
 		}
-		System.out.print("\n" + "[3] 반복문 using do while" + "\n");
+		System.out.print("\n" + "[3] 반복문 using do while" + "\n" + ">> ");
 		int k=1; do  { 
 			System.out.printf("%d * %d = %d\t", score, k, (score*k)); k += 1; 
 		} while (k<10);
