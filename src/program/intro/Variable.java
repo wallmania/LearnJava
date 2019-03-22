@@ -1,4 +1,4 @@
-package program.Intro;
+package program.intro;
 
 public class Variable {
 	public static void main(String[] args) {
