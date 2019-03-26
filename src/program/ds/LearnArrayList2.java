@@ -88,9 +88,6 @@ public class LearnArrayList2 {
 			}
 			System.out.print(number2 + " ");
 		}
-		System.out.println("\n" + ">> 30이 삭제되었고 결론은 : " + numbers);
-		 
-		
-		
+		System.out.println("\n" + ">> 30이 삭제되었고 결론은 : " + numbers);	
 	}
 }
