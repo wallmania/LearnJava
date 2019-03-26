@@ -43,7 +43,7 @@ public class ObejctOverride2 {
 		ObejctOverride2 ex2 = new ObejctOverride2();
 		ex2.name = "홍길동"; ex2.number = "1234"; ex2.birthYear = 1995;
 		
-		System.out.println("$ 두 객체는 type이 같아도 엄연히 다른 객체이므로 서로 같지 않다.");
+		System.out.println("\n" + "$ 두 객체는 type이 같아도 엄연히 다른 객체이므로 서로 같지 않다.");
 		System.out.println("$ 두 객체의 학번이 같으면 같은 객체라고 해줄 수 있을까?");
 		System.out.println("$ hashCode를 override해서 재정의하기 (ex) 학번만 이용해서 hashCode 만들기.)");
 		System.out.println("$ 서로 다른 두 객체의 학번이 같으면 --> hashCode 값이 같으므로 --> 같은 객체가 된다.)");

@@ -84,6 +84,13 @@ public class JavaLangPackage {
 		} else { System.out.printf(">> [10000번 반복] 걸린 시간은 Duration_3(%f ms) = Duration_4(%f ms)\n", (double)Duration_3, (double)Duration_4); }
 
 		
+		System.out.println("\n" + "----------------------------------------------------------------------------------------");
+		System.out.println("$ Math클래스는 이름 그대로 수학계산을 위한 클래스.");
+		int value1 = Math.max(5, 20); System.out.printf(">> int value1 = Math.max(5, 20) = %d\n", value1);
+		int value2 = Math.min(5, -5); System.out.printf(">> int value2 = Math.min(5, -5) = %d\n", value2);
+		int value3 = Math.abs(-10); System.out.printf(">> int value3 = Math.abs(-10) = %d\n", value3);
+		double value4 = Math.random(); System.out.printf(">> double value4 = Math.random() = %f\n", value4);
+		double value5 = Math.sqrt(25); System.out.printf(">> double value5 = Math.sqrt(25) = %f\n", value5);
 	}
 
 }

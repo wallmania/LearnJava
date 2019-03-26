@@ -18,7 +18,7 @@ public class ObejctOverride1 {
 		ObejctOverride1 ex2 = new ObejctOverride1();
 		ex2.name = "홍길동"; ex2.number = "1234"; ex2.birthYear = 1995;
 		
-		System.out.println("-- 두 객체는 type이 같아도 엄연히 다른 객체이므로 서로 같지 않다.");
+		System.out.println("\n" + "$ 두 객체는 type이 같아도 엄연히 다른 객체이므로 서로 같지 않다.");
 		if (ex1.equals(ex2)) {
 			System.out.printf(">> ex1 == ex2 w/ hashcode ex1(%s) & ex2(%s)", ex1.hashCode(), ex2.hashCode());
 			System.out.print("\n\n");
