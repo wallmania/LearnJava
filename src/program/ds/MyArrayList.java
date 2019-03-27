@@ -2,7 +2,7 @@ package program.ds;
 
 public class MyArrayList {
 	private int size = 0;
-	private Object[] elementData = new Object[100];
+	private Object[] elementData = new Object[100000000];
 	
 	// addFirst
 	public boolean addFirst(Object element) {
@@ -78,7 +78,7 @@ public class MyArrayList {
 		return new ListIterator();
 	}
 	
-	class ListIterator {
+	public class ListIterator {
 		private int nextIndex = 0;
 		
 		public int size() {
