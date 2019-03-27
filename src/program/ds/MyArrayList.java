@@ -75,7 +75,6 @@ public class MyArrayList {
 	}
 	
 	public ListIterator listIterator() {
-		System.out.println("*** ListIterator 라는 data tpye의 listIterator() method가 실행되었습니다. ***");
 		return new ListIterator();
 	}
 	
@@ -100,10 +99,12 @@ public class MyArrayList {
 		public boolean hasPrevious() { return nextIndex > 0; }
 		
 		public void add(Object element) {
+			// MyArrayList에 저장되어 있는 method인 add에 접근하기 위해서 this를 사용한다.
 			MyArrayList.this.add(nextIndex, element);
 		}
 		
 		public void remove() {
+			// MyArrayList에 저장되어 있는 method인 remove에 접근하기 위해서 this를 사용한다.
 			MyArrayList.this.remove(nextIndex-1);
 			nextIndex--;
 		}
