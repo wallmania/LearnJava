@@ -23,5 +23,4 @@ public class MyMusicPlayerType2 extends Thread {
 				break;
 		}
 	}
-
 }
