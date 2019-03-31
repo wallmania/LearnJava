@@ -28,7 +28,7 @@ public class J17InnerClass {
 			
 			// static inner class
 			OuterClass.StaticInnerClass sin = new OuterClass.StaticInnerClass();
-			System.out.printf(">> s1.num(%d), s1.str3(%s)", sin.num, sin.str3);
+			System.out.printf(">> sin.num(%d), sin.str3(%s)", sin.num, sin.str3);
 			System.out.print("\n\n");		
 			
 			// 익명(anonymous) class

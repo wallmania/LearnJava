@@ -22,3 +22,18 @@ public class J18InterfaceMain {
 		
 	}
 }
+
+interface InterfaceA { public void funA(); }
+
+interface InterfaceB { public void funB(); }
+
+class InterfaceClass implements InterfaceA, InterfaceB {
+	
+	public InterfaceClass() { System.out.println("-- InterfaceClass type 객체 생성. --" + "\n"); }
+
+	@Override
+	public void funA() { System.out.println(">> InterfaceA에 정의된 funA() method는 공란 & InterfaceClass에서 해당 method를 Override하여 실행. "); }
+	
+	@Override
+	public void funB() { System.out.println(">> InterfaceB에 정의된 funB() method는 공란 & InterfaceClass에서 해당 method를 Override하여 실행. "); }
+}
