@@ -3,7 +3,7 @@ package wallmania;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class J15Inheritance1 {
+public class J15Inheritance {
 	public static void main(String[] args) {
 		
 		
@@ -41,8 +41,8 @@ public class J15Inheritance1 {
 		// -- File 입출력 Code -- System.out.println("Working Directory = " + System.getProperty("user.dir"));
 		FileInputStream fis = null; FileOutputStream fos = null;
 		try {
-			fis = new FileInputStream("/Users/junlee/Java/workspace/LearnJava/src/wallmania/J15Inheritance1.java");
-			fos = new FileOutputStream("/Users/junlee/Java/workspace/LearnJava/src/wallmania/J15Inheritance1.txt");
+			fis = new FileInputStream("/Users/junlee/Java/workspace/LearnJava/src/wallmania/J15Inheritance.java");
+			fos = new FileOutputStream("/Users/junlee/Java/workspace/LearnJava/src/wallmania/J15Inheritance.txt");
 			int readData = -1; while((readData = fis.read()) != -1) { fos.write(readData); }
 		} catch (Exception e) {  e.printStackTrace();
 		} finally { try { fos.close(); } catch (Exception e) { e.printStackTrace(); } }
