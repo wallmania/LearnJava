@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 public class J19InterfaceToyMain {
+	
 	public static void main(String[] args) {
 		InterfaceToy toyBot1 = new InterfaceToyBot1();
 		InterfaceToy toyBot2 = new InterfaceToyBot2();

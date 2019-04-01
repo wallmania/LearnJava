@@ -6,8 +6,8 @@ import java.io.FileOutputStream;
 public class J21AbstractClass {
 	
 	public static void main(String[] args) {
-		Bank bankA = new BankA("Park", "123-456-7890", 10000);
-		Bank bankB =  new BankB("Park", "123-456-7890", 10000);
+		BankA bankA = new BankA("Park", "123-456-7890", 10000);
+		BankB bankB =  new BankB("Lee", "098-765-4321", 1000);
 		
 		bankA.deposit(); bankA.withdraw(); bankA.installmentSavings(); bankA.cancellation(); bankA.getInfo();
 		bankB.deposit(); bankB.withdraw(); bankB.installmentSavings(); bankB.cancellation(); bankB.getInfo();
@@ -25,12 +25,15 @@ public class J21AbstractClass {
 }
 
 abstract class Bank {
-	String name; 
-	String account; 
-	int totalAmount;
+	String name; String account; int totalAmount;
 	
 	public Bank() { System.out.println(">> Bank type의 class 생성\n"); }
-	public Bank(String name, String account, int totalAmount) { System.out.printf(">> Bank type의 class 생성 w/ param name(%s), account(%s), totalAmount(%d)\n\n", name, account, totalAmount); }
+	public Bank(String name, String account, int totalAmount) { 
+		this.name = name;
+		this.account = account;
+		this.totalAmount = totalAmount;
+		System.out.printf(">> Bank type의 class 생성 w/ param name(%s), account(%s), totalAmount(%d)\n\n", name, account, totalAmount); 
+	}
 	
 	public void deposit() { System.out.println(">> 해당 method(예금)는 Bank에서 정의한 method 사용."); }
 	public void withdraw() { System.out.println(">> 해당 method(인출)는 Bank에서 정의한 method 사용."); }
