@@ -49,11 +49,10 @@ public class J8ClassMain {
 		System.out.println("\n[5] reference에 null 저장되면 객체의 연결이 끊기며, 더 이상 객체를 이용할 수 없다.");
 		System.out.println(">> ClassEx5 가 저장된 곳의 현재 memory 주소는 " + ClassEx5); ClassEx5.getInfo();
 		ClassEx5 = null; 
-		System.out.println("ExClass_5th : " + ClassEx5);
-		// ExClass_5th.getInfo();
+		System.out.println(">> Null로 설정한 후, ClassEx5 가 저장된 곳의 현재 memory 주소는 : " + ClassEx5);
 		
 		// this 학습. 
-		System.out.println("");
+		System.out.println("\n[5] this 학습.");
 		ClassType4 learnclass4 = new ClassType4(10, 20);
 		learnclass4.getInfo();
 		
@@ -103,27 +102,23 @@ class ClassType2 {
 }
 
 class ClassType3 {
-	public void getInfo() { 
-		System.out.println("getInfo - Type 1 -"); 
-	}
+	public void getInfo() { System.out.println(">> ClassType3 Type Class의 method, .getInfo() 발동!"); }
 }
 
 class ClassType4 {
 	public int x1; public int y1; public int x2; public int y2;
 	
 	public ClassType4(String s, int[] iArr) {
-		System.out.println("-- LearnClass4 Type의 객체 생성됨. w/ param(String s, int[] iArr) --");
+		System.out.println(">> ClassType4 Type 객체 생성 w/ param(String s, int[] iArr)");
 		System.out.println("s : " + s); System.out.println("iArr : " + iArr);
 	}
 	
 	// this.x1에서 x1은 LearnClass4에서의 x1 != 매개변수 x1
 	// this.y1에서 y1은 LearnClass4에서의 y1 != 매개변수 y1
 	public ClassType4(int x1, int y1) {
-		System.out.println("-- LearnClass4 Type의 객체 생성됨. w/ param(int x1, int y1) --");
+		System.out.println(">> ClassType4 Type 객체 생성 w/ param(int x1, int y1)");
 		this.x1 = x1; this.y1 = y1;
 	}
 	
-	public void getInfo() {
-		System.out.println(">> x1(" + x1 + ") y1(" + y1 + ") x2(" + x2 + ") y2(" + y2 + ")");
-	}
+	public void getInfo() { System.out.println(">> x1(" + x1 + ") y1(" + y1 + ") x2(" + x2 + ") y2(" + y2 + ")"); }
 }
