@@ -52,9 +52,7 @@ public class Make_GBD_CTG {
 			int readData = -1; while((readData = fis.read()) != -1) { fos.write(readData); }
 			
 		} catch (Exception e) {
-			
 			e.printStackTrace();
-			
 		} finally { 
 			
 			try { 
