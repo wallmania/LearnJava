@@ -35,8 +35,16 @@ public class J13BufferReader {
 		try {
 			fis = new FileInputStream("/Users/junlee/Java/workspace/LearnJava/src/wallmania/J13BufferReader.java");
 			fos = new FileOutputStream("/Users/junlee/Java/workspace/LearnJava/src/wallmania/J13BufferReader.txt");
-			int readData = -1; while((readData = fis.read()) != -1) { fos.write(readData); }
+			int readData = -1; 
+			while((readData = fis.read()) != -1) { 
+				fos.write(readData); 
+			}
 		} catch (Exception e) {  e.printStackTrace();
-		} finally { try { fos.close(); } catch (Exception e) { e.printStackTrace(); } }
+		} finally { 
+			try { fos.close(); 
+			} catch (Exception e) { 
+				e.printStackTrace(); 
+			} 
+		}
 	}
 }
